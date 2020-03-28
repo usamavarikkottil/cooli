@@ -99,3 +99,8 @@ sudo apt-get install evince -y
 
 
 
+echo "Installing gdb and gdb peda..."
+sudo apt-get update
+sudo apt-get install libc6-dbg gdb valgrind -y
+git clone https://github.com/longld/peda.git ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
