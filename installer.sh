@@ -104,3 +104,13 @@ sudo apt-get update
 sudo apt-get install libc6-dbg gdb valgrind -y
 git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+
+echo " Installing pwn..."
+sudo apt-get update
+sudo pip3 install pwn
+sudo pip install setuptools
+sudo apt-get install python-dev -y
+sudo pip install six==1.14.0
+sudo pip install pwn
+
