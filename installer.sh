@@ -18,8 +18,8 @@ sudo apt-get update
 sudo apt-get install sublime-text
 
 echo -e "installing python-pip and python3-pip"
-sudo apt-get install python-pip
-sudo apt-get install python3-pip
+sudo apt-get install python-pip -y
+sudo apt-get install python3-pip -y 
 
 echo -e "installing youtube dl\n"
 sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
