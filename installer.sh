@@ -110,7 +110,35 @@ echo " Installing pwn..."
 sudo apt-get update
 sudo pip3 install pwn
 sudo pip install setuptools
+sudo python -m pip install --upgrade pip
 sudo apt-get install python-dev -y
 sudo pip install six==1.14.0
 sudo pip install pwn
 
+
+echo "Installing foremost..."
+sudo apt-get install foremost -y
+
+echo "Installing flameshot screenshot tool..."
+sudo apt install flameshot -y
+
+
+
+echo "Installing gobuster..."
+sudo apt install gobuster -y
+
+
+echo "INstalling ffuf..."
+go get github.com/ffuf/ffuf
+
+
+echo "Installing subfinder..."
+wget "https://github.com/projectdiscovery/subfinder/releases/download/v2.3.2/subfinder-linux-amd64.tar"
+tar -xzvf subfinder-linux-amd64.tar
+sudo mv subfinder-linux-amd64 /usr/bin/subfinder
+
+
+echo "installing httprobe"
+wget "https://github.com/tomnomnom/httprobe/releases/download/v0.1.2/httprobe-linux-amd64-0.1.2.tgz"
+tar -zxvf httprobe-linux-amd64-0.1.2.tgz
+sudo mv httprobe /usr/bin
